@@ -6,11 +6,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.raywenderlich.android.creatures.R
 import com.raywenderlich.android.creatures.app.inflate
 import com.raywenderlich.android.creatures.model.Creature
+import kotlinx.android.synthetic.main.activity_creature.view.*
+import kotlinx.android.synthetic.main.list_item_creature.view.*
 
 class CreatureAdapter (private val creatures: List<Creature>): RecyclerView.Adapter<CreatureAdapter.ViewHolder>() {
 
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v){
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        private lateinit var creature: Creature
 
+        fun bind(newCreature: Creature){
+            this.creature = newCreature
+            val context = itemView.context
+            itemView.creatureImage.setImageResource(context.resources.getIdentifier(creature.uri, null, context.packageName))
+            itemView.creatureFullName.text = creature.fullName
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -18,10 +27,8 @@ class CreatureAdapter (private val creatures: List<Creature>): RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        holder.bind(creatures[position])
     }
 
     override fun getItemCount() = creatures.size
-
-
 }

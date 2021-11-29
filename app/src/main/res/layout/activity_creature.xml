@@ -54,9 +54,9 @@
     android:background="@android:color/transparent"
     android:contentDescription="@string/content_description_favorite_button"
     android:scaleType="fitXY"
-    android:tint="@color/colorAccent"
-    app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+    app:srcCompat="@drawable/ic_favorite_border_black_24dp"
+      app:tint="@color/colorAccent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
