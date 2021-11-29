@@ -6,8 +6,9 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.1640625" />
         <entry key="app/src/main/res/layout/activity_creature.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_all.xml" value="0.18432971014492755" />
-        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_item_creature.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/list_item_food.xml" value="0.10416666666666667" />
       </map>
     </option>
   </component>
