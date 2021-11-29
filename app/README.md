@@ -1,0 +1,2 @@
+# Creatures
+The point of this repo is to push the changes I make from the [Beginning RecyclerView](https://www.raywenderlich.com/9261744-beginning-recyclerview) course which is a part of the [Android User Interface](https://www.raywenderlich.com/android/paths/androiduserinterface) learning path 
