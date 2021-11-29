@@ -20,7 +20,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/creatureImage"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Full Name" />
+        tools:text="Full Name"
+        />
+
+
+    <TextView
+        android:id="@+id/creatureNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_double"
+        android:layout_marginBottom="@dimen/padding_half"
+        app:layout_constraintTop_toTopOf="@+id/creatureFullName"
+        app:layout_constraintStart_toStartOf="@id/creatureFullName"
+        tools:text="Nickname"/>
 
     <ImageView
         android:id="@+id/creatureImage"
@@ -32,4 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/creature_cat_derp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
